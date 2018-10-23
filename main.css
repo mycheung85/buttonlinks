@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Nunito|Open+Sans+Condensed:300');
+
+
+
+*{
+  box-sizing: border-box;
+  
+}
+
+
+
+.body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+
+  
+}
+
+.wrapper {
+  display: flex;
+  background-color:white;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  padding: 1em;
+  overflow: hidden;
+  border-radius: 15px;
+  
+}
+
+.facebook {
+  display: flex;
+  height: 25%;
+  box-sizing: border-box;
+  font-family: Nuito;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.facebook a {
+  display: flex;
+  background-color: blue;
+  padding: 45px 45px;
+  text-decoration: none;
+  color: white;
+  border-radius: 25px;
+  box-shadow: 10px 10px 0 skyblue;
+  font-size: 25px;
+  transition: 1s;
+}
+
+
+.facebook a:hover {
+  transition: 0.5;
+  box-shadow: 20px 20px white;
+  animation: facebookchange;
+}
+
+.code-nation {
+  display: flex;
+  height: 25%;
+  box-sizing: border-box;
+  background-color: rgb(56, 47, 228);
+  justify-content: center;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cn {
+  display: flex;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: none;
+  padding: 15px 15px;
+  background: skyblue;
+  border-radius: 25%;
+  transition: 1s;
+  box-shadow: 10px 10px 0 black;
+  font-size: 60px;
+ 
+
+}
+
+.cn:hover {
+  transition: all 1.5s;
+  box-shadow: 10px 10px white;
+  transform: rotate(360deg) skewX(-15deg);
+}
+
+
+.curly-brackets {
+  color: black;
+  font-size: 60px;
+  background: none;
+}
+
+.nation, .code {
+  font-size: 60px;
+  background:none;
+  color: whitesmoke;
+}
+
+
+.code:hover {
+  font-size: 60px;
+  font-family: 'Anton';
+  color: yellow;
+  transform: rotate(180deg);
+}
+
+
+.twitter {
+  display: flex;
+  box-sizing: border-box;
+  height: 25%;
+  background-color: skyblue;
+  justify-content: center;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.twitter a {
+  display: flex;
+  font-size: 60px;
+  font-family: 'Nunito';
+  box-sizing: border-box;
+  text-decoration: none;
+  background: white;
+  padding: 15px 15px;
+  border-radius: 25px;
+  color: skyblue;
+  border-style: solid;
+  border-color: black;
+
+}
+
+.instagram {
+  display: flex;
+  height: 25%;
+  box-sizing: border-box;
+  background-color: purple;
+  justify-content: center;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram a {
+  display: flex;
+  font-size: 60px;
+  font-family: 'Nunito';
+  box-sizing: border-box;
+  text-decoration: none;
+  background:#f442e8;
+  padding: 15px 15px;
+  border-radius: 25px;
+  color: white;
+  border-style: solid;
+  border-color: black;
+}
+
+@keyframes facebookchange {
+  0% {fill: black}
+  50% {fill: white}
+  100% {fill: skyblue}
+}
+
+@keyframes codechange {
+  0% {fill: white}
+  50% {fill: yellow}
+  100% {fill: white}
+}
