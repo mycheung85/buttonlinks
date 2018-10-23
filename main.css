@@ -54,6 +54,9 @@
   transition: 1s;
 }
 
+.fb {
+  animation-iteration-count: infinite;
+}
 
 .facebook a:hover {
   transition: 0.5;
@@ -124,6 +127,7 @@
   border-radius: 15px;
   justify-content: center;
   align-items: center;
+  
 }
 
 .twitter a {
@@ -138,13 +142,15 @@
   color: skyblue;
   border-style: solid;
   border-color: black;
+  box-shadow: 10px 10px black;
+  animation: twitterslide 5s linear 1s infinite alternate;
 }
 
 .twitter a:hover {
-  transition: all 1.5s;
-  box-shadow: 10px 10px black;
-  animation: twittermove 3s infinite;
+  animation: twitterchange 0.5s infinite
 }
+
+
 
 .instagram {
   display: flex;
@@ -155,6 +161,7 @@
   border-radius: 15px;
   justify-content: center;
   align-items: center;
+  animation-iteration-count: infinite;
 }
 
 .instagram a {
@@ -184,7 +191,13 @@
   100% {fill: white}
 }
 
-@keyframes twittermove {
-  from {right: 0%}
-  to {right: 20%}
+@keyframes twitterchange {
+  0% {box-shadow: 10px 10px black; color: red; }
+  50% {box-shadow: 20px 20px red; color: black;}
+  100% {box-shadow: 10px 10px black; color: red; }
+}
+
+@keyframes twitterslide {
+  from {margin-left: -70%}
+  to {margin-left: 70%}
 }
