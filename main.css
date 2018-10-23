@@ -138,7 +138,12 @@
   color: skyblue;
   border-style: solid;
   border-color: black;
+}
 
+.twitter a:hover {
+  transition: all 1.5s;
+  box-shadow: 10px 10px black;
+  animation: twittermove 3s infinite;
 }
 
 .instagram {
@@ -164,6 +169,7 @@
   color: white;
   border-style: solid;
   border-color: black;
+  
 }
 
 @keyframes facebookchange {
@@ -176,4 +182,9 @@
   0% {fill: white}
   50% {fill: yellow}
   100% {fill: white}
+}
+
+@keyframes twittermove {
+  from {right: 0%}
+  to {right: 20%}
 }
